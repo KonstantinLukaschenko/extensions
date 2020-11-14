@@ -172,7 +172,7 @@ namespace Signum.Entities.Mailing
 
         internal bool Similar(EmailAttachmentEmbedded a)
         {
-            return ContentId == a.ContentId || File.FileName == a.File.FileName;
+            return ContentId == a.ContentId && File.FileName == a.File.FileName;
         }
 
         public override string ToString()
